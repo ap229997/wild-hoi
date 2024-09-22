@@ -1,0 +1,15 @@
+SEED: 123
+EXP: rep
+XSEC: False
+OBJ_GEN: False
+OUTPUT_DIR: logs/eval
+DB:
+  DIR: '' # change path to dataset
+  TESTNAME: mow
+SOLVER:
+  NUM_WORKERS: 1
+MODEL:
+  BATCH_SIZE: 1 # keep it 1 for evaluation
+  OCCUPANCY: True
+TEST:
+  VIS_EVERY: 10000001

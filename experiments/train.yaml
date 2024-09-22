@@ -1,0 +1,33 @@
+SEED: 123
+EXP: rep
+XSEC: True
+OBJ_GEN: True
+OUTPUT_DIR: logs/debug
+DB:
+  DIR: '' # change path to dataset
+  NAME: 'obman+visor'
+  TESTNAME: ho3d_vid3fps
+  GT: plus
+  SAMPLER: weighted
+  NUM_POINTS: 4096
+SOLVER:
+  BASE_LR: 1e-5
+  ENC_LR: 1e-5
+  DISC_LR: 1e-5
+  NUM_WORKERS: 8
+  DEBUG: False
+  ENC_ITER: 2
+  DISC_ITER: 1
+MODEL:
+  BATCH_SIZE: 16
+  OCCUPANCY: True
+TRAIN:
+  EPOCH: 100
+  EVAL_EVERY: 5
+  VIS_EVERY: 5000
+  PRINT_EVERY: 1000
+LOSS:
+  OCCUPANCY: 1.0
+  OCC_CONSISTENCY: 1.0
+  ENC: 0.25
+  DISC: 0.25

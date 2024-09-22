@@ -1,0 +1,8 @@
+*.DS_Store
+*__pycache__
+*data/*
+logs/*
+*.vscode/*
+weights/*
+*.ipynb_checkpoints*
+externals*
