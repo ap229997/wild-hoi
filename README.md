@@ -22,7 +22,7 @@ Follow the instructions in [IHOI](https://github.com/JudyYe/ihoi/blob/main/docs/
 
 We use several datasets in our work, download the RGB images, segmentation masks, object masks and hand poses (if available) separately for each: [ObMan](https://www.di.ens.fr/willow/research/obman/data/), [HO3D](https://www.tugraz.at/institute/icg/research/team-lepetit/research-projects/hand-object-3d-pose-annotation/), [MOW](https://zhec.github.io/rhoi/), [VISOR](https://epic-kitchens.github.io/VISOR/).
 
-The object meshes are processed using DeepSDF code into the required format in the same way as [IHOI](https://github.com/JudyYe/ihoi/blob/main/docs/preprocess.md). For ObMan and HO3D, we use the `mesh_sdf` from [IHOI](https://github.com/JudyYe/ihoi/blob/main/docs/preprocess.md). For HOI4D and MOW, it is recommended to run the DeepSDF code on the object meshes and save in the same format as ObMan and HO3D in the `mesh_sdf` folder.
+The object meshes are processed using DeepSDF code into the required format in the same way as [IHOI](https://github.com/JudyYe/ihoi/blob/main/docs/preprocess.md). For ObMan and HO3D, we use the `mesh_sdf` from [IHOI](https://github.com/JudyYe/ihoi/blob/main/docs/preprocess.md). For MOW, it is recommended to run the DeepSDF code on the object meshes and save in the same format as ObMan and HO3D in the `mesh_sdf` folder.
 
 We have also provided our preprocessed data [here](https://drive.google.com/drive/folders/1WyCVKuhfieY2qkY4vso_TBTKrbJ_GjFU?usp=sharing). These can directly be used with the RGB images and segmentation masks from the respective datasets.
 
@@ -61,6 +61,10 @@ To evaluate the model on the test set, run the following command:
 ```bash
 python models/ihoi.py --config experiments/test.yaml --ckpt <PATH_TO_TRAINED_CKPT> --eval
 ```
+
+## License
+
+All the material here is released under the Creative Commons Attribution-NonCommerial 4.0 International License, found [here](https://creativecommons.org/licenses/by-nc/4.0/). 
 
 ## Acknowledgements
 
