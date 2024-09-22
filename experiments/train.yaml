@@ -6,7 +6,7 @@ OUTPUT_DIR: logs/debug
 DB:
   DIR: '' # change path to dataset
   NAME: 'obman+visor'
-  TESTNAME: ho3d_vid3fps
+  TESTNAME: ho3d_vid
   GT: plus
   SAMPLER: weighted
   NUM_POINTS: 4096
