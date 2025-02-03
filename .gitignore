@@ -6,3 +6,4 @@ logs/*
 weights/*
 *.ipynb_checkpoints*
 externals*
+demo/*_out*

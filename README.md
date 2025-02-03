@@ -18,6 +18,9 @@ This repository contains the code for the ECCV 2024 paper [3D Reconstruction of 
 
 Follow the instructions in [IHOI](https://github.com/JudyYe/ihoi/blob/main/docs/install.md) to setup the environment and external dependencies.
 
+## Demo
+To run the [demo](demo.ipynb), download the model weights from [here](https://drive.google.com/drive/folders/1WyCVKuhfieY2qkY4vso_TBTKrbJ_GjFU?usp=sharing) (this is an improved checkpoint which is also trained on MOW). The demo script is modified from [IHOI](https://github.com/JudyYe/ihoi) repo to work with our model. Some test images are provided in `demo` folder.
+
 ## Dataset
 
 We use several datasets in our work, download the RGB images, segmentation masks, object masks and hand poses (if available) separately for each: [ObMan](https://www.di.ens.fr/willow/research/obman/data/), [HO3D](https://www.tugraz.at/institute/icg/research/team-lepetit/research-projects/hand-object-3d-pose-annotation/), [MOW](https://zhec.github.io/rhoi/), [VISOR](https://epic-kitchens.github.io/VISOR/).
